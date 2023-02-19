@@ -45,7 +45,7 @@ VantComponent({
             value: '20px',
         },
         color: String,
-        ljxButtonShow: {
+        ljxTextShow: {
             type: Boolean,
             value: false,
         },
@@ -53,7 +53,7 @@ VantComponent({
     methods: {
         onClick(event) {
             this.$emit('click', event);
-            const { canIUseGetUserProfile, openType, getUserProfileDesc, lang, } = this.data;
+            const { canIUseGetUserProfile, openType, getUserProfileDesc, lang } = this.data;
             if (openType === 'getUserInfo' && canIUseGetUserProfile) {
                 wx.getUserProfile({
                     desc: getUserProfileDesc || '  ',

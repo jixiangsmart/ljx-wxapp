@@ -50,7 +50,7 @@ VantComponent({
       value: '20px',
     },
     color: String,
-    ljxButtonShow: {
+    ljxTextShow: {
       type: Boolean,
       value: false,
     },
