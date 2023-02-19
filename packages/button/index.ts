@@ -50,18 +50,18 @@ VantComponent({
       value: '20px',
     },
     color: String,
+    ljxButtonShow: {
+      type: Boolean,
+      value: false,
+    },
   },
 
   methods: {
     onClick(event: WechatMiniprogram.TouchEvent) {
       this.$emit('click', event);
 
-      const {
-        canIUseGetUserProfile,
-        openType,
-        getUserProfileDesc,
-        lang,
-      } = this.data;
+      const { canIUseGetUserProfile, openType, getUserProfileDesc, lang } =
+        this.data;
 
       if (openType === 'getUserInfo' && canIUseGetUserProfile) {
         wx.getUserProfile({

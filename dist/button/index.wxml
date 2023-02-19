@@ -27,6 +27,9 @@
   bindopensetting="onOpenSetting"
   bindchooseavatar="onChooseAvatar"
 >
+  <block wx:if="{{ ljxTextShow }}">
+    ljx-
+  </block>
   <block wx:if="{{ loading }}">
     <van-loading
       custom-class="loading-class"

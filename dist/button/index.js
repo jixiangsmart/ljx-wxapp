@@ -45,6 +45,10 @@ VantComponent({
             value: '20px',
         },
         color: String,
+        ljxButtonShow: {
+            type: Boolean,
+            value: false,
+        },
     },
     methods: {
         onClick(event) {

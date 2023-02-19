@@ -147,6 +147,7 @@
 | show-message-card | 显示会话内消息卡片 | _string_ | `false` |
 | dataset | 按钮 dataset，open-type 为 `share` 时，可在 onShareAppMessage 事件的 `event.target.dataset.detail` 中看到传入的值 | _any_ | - |
 | form-type | 用于 form 组件，可选值为`submit` `reset`，点击分别会触发 form 组件的 submit/reset 事件 | _string_ | - |
+| ljxTextShow | 是否显示ljx文本 | _boolean_ | `false` |
 
 ### Events
 
