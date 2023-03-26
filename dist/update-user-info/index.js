@@ -25,6 +25,6 @@ VantComponent({
             this.setData({
                 avatarUrl,
             });
-        }
+        },
     },
 });

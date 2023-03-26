@@ -12,7 +12,8 @@ export default {
     description: '轻量、可靠的小程序 UI 组件库',
     logo: 'https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg',
     simulator: {
-      url: 'https://vant-contrib.gitee.io/vant/v2/mobile.html?weapp=1',
+      url: 'http://127.0.0.1:5500/site-dist/mobile.html#/',
+      // url: 'https://vant-contrib.gitee.io/vant/v2/mobile.html?weapp=1',
       routeMapper: (path) => {
         const map = {
           '/common': '/style',
