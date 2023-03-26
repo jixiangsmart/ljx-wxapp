@@ -1,0 +1,38 @@
+<view class="shop-set">
+  <form catchsubmit="formSubmit">
+    <view class="shop-set_form">
+      <view class="shop-set_form-title">我的昵称</view>
+      <view>
+        <input
+          class="shop-set_form-input"
+          value="{{nickName}}"
+          maxlength="10"
+          bindinput="nameContentModel"
+          name="nickName"
+          type="nickname"
+          placeholder="请输入您的昵称"
+        />
+      </view>
+    </view>
+    <view class="shop-set_form">
+      <view class="shop-set_form-title">我的头像</view>
+      <button class="shop-set_form-avatar" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <van-image
+          round
+          width="72rpx"
+          height="72rpx"
+          wx:if="{{avatarUrl}}"
+          src="{{avatarUrl}}"
+        />
+        <view wx:else class="shop-set_form-input">
+          请上传您的头像
+        </view>
+        <van-icon name="arrow" class="shop-set_form-icon" />
+      </button>
+    </view>
+    <view class="shop-set_save">
+      <button class="shop-set_save-btn" formType="submit">保存</button>
+    </view>
+  </form>
+</view>
+

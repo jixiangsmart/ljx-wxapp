@@ -7,10 +7,10 @@ export default {
     },
   },
   site: {
-    versions: [{ label: '0.x', link: '/vant-weapp/0.x' }],
-    title: 'Vant Weapp',
+    // versions: [{ label: '0.x', link: '/vant-weapp/0.x' }],
+    title: 'Weapp Material',
     description: '轻量、可靠的小程序 UI 组件库',
-    logo: 'https://img.yzcdn.cn/vant/logo.png',
+    logo: 'https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg',
     simulator: {
       url: 'https://vant-contrib.gitee.io/vant/v2/mobile.html?weapp=1',
       routeMapper: (path) => {
@@ -23,14 +23,14 @@ export default {
       syncPathFromSimulator: false,
     },
     links: [
-      {
-        logo: 'https://img.yzcdn.cn/vant/vant-o.svg',
-        url: 'https://vant-contrib.gitee.io/vant/',
-      },
-      {
-        logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-        url: 'https://github.com/youzan/vant-weapp',
-      },
+      // {
+      //   logo: 'https://img.yzcdn.cn/vant/vant-o.svg',
+      //   url: 'https://vant-contrib.gitee.io/vant/',
+      // },
+      // {
+      //   logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+      //   url: 'https://github.com/youzan/vant-weapp',
+      // },
     ],
     baiduAnalytics: {
       seed: 'af5d41bc4e446e76665dbe3ec18d55c3',
@@ -60,6 +60,15 @@ export default {
             title: '定制主题',
           },
         ],
+      },
+      {
+        title: '物料中心',
+        items: [
+          {
+            path: 'update-user-info',
+            title: '更新用户头像昵称',
+          }
+        ]
       },
       {
         title: '基础组件',

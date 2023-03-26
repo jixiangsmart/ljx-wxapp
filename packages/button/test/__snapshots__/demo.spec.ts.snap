@@ -848,7 +848,7 @@ exports[`should render demo and match snapshot 1`] = `
               <wx-image
                 class="van-icon__image"
                 mode="aspectFit"
-                src="https://img.yzcdn.cn/vant/logo.png"
+                src="https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg"
               />
             </wx-view>
           </van-icon>

@@ -1,0 +1,3 @@
+<demo-block title="按钮类型">
+  <van-update-user-info></van-update-user-info>
+</demo-block>

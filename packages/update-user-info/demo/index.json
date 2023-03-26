@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-update-user-info": "../../update-user-info/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

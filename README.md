@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" style="margin-bottom: 10px;">
+  <img alt="logo" src="https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg" width="120" style="margin-bottom: 10px;">
 </p>
 <h3 align="center">轻量、可靠的小程序 UI 组件库</h3>
 
@@ -11,7 +11,6 @@
 </p>
 
 <p align="center">
-  🔥 <a href="https://vant-contrib.gitee.io/vant-weapp">文档网站（国内）</a>
   &nbsp;
   🌈 <a href="https://youzan.github.io/vant-weapp">文档网站（GitHub）</a>
   &nbsp;

@@ -1,10 +1,10 @@
-export default function(options = {}) {
+export default function (options = {}) {
   return Page({
     onShareAppMessage() {
       return {
-        title: 'Vant Weapp 组件库演示'
+        title: 'Weapp Material 组件库演示',
       };
     },
-    ...options
+    ...options,
   });
 }

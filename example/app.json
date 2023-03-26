@@ -53,11 +53,12 @@
     "pages/calendar/index",
     "pages/share-sheet/index",
     "pages/config-provider/index",
-    "pages/cascader/index"
+    "pages/cascader/index",
+    "pages/update-user-info/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f8f8f8",
-    "navigationBarTitleText": "Vant Weapp",
+    "navigationBarTitleText": "Weapp Material",
     "navigationBarTextStyle": "black",
     "backgroundTextStyle": "dark",
     "backgroundColor": "#f8f8f8"
@@ -116,7 +117,8 @@
     "van-calendar-demo": "./dist/calendar/demo/index",
     "van-share-sheet-demo": "./dist/share-sheet/demo/index",
     "van-config-provider-demo": "./dist/config-provider/demo/index",
-    "van-cascader-demo": "./dist/cascader/demo/index"
+    "van-cascader-demo": "./dist/cascader/demo/index",
+    "van-update-user-info-demo": "./dist/update-user-info/demo/index"
   },
   "sitemapLocation": "sitemap.json"
 }

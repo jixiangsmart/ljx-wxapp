@@ -41,8 +41,8 @@
     "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.6.5",
-  "appid": "wx1c01b35002d3ba14",
+  "libVersion": "2.30.0",
+  "appid": "wxfea6c5d9d3f2b6ce",
   "projectname": "vant-weapp",
   "condition": {
     "miniprogram": {

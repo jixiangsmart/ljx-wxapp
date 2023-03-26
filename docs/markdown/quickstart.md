@@ -2,7 +2,7 @@
 
 ### 背景知识
 
-使用 Vant Weapp 前，请确保你已经学习过微信官方的 [小程序简易教程](https://developers.weixin.qq.com/miniprogram/dev/framework/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
+使用 Weapp Material 前，请确保你已经学习过微信官方的 [小程序简易教程](https://developers.weixin.qq.com/miniprogram/dev/framework/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
 ## 安装
 
@@ -91,7 +91,7 @@ yarn add -D miniprogram-api-typings
 
 我们提供了一个[示例工程](https://github.com/vant-ui/vant-demo)，示例工程会帮助你了解如下内容：
 
-- 基于 Vant Weapp 搭建小程序应用
+- 基于 Weapp Material 搭建小程序应用
 - 样式覆盖方案
 
 ## 使用
@@ -140,7 +140,7 @@ yarn add -D miniprogram-api-typings
 
 ```bash
 
-# 将项目克隆到本地
+# 将项目克隆到本地 ljx
 git clone git@github.com:youzan/vant-weapp.git
 
 # 安装项目依赖
@@ -152,13 +152,3 @@ npm run dev
 ```
 
 接着打开微信开发者工具，导入`example`目录的项目就可以预览示例了。
-
-### 关于用户隐私保护指引
-
-@vant/weapp 部分组件使用了微信提供的接口，其中部分接口涉及获取用户隐私信息。
-
-例如 `<Uploader />` 使用了微信提供的选择用户相册中图片接口`(wx.chooseImage)`。
-
-当小程序引入 @vant/weapp 并发布时，
-根据微信[《用户隐私保护指引填写说明》](https://developers.weixin.qq.com/miniprogram/dev/framework/user-privacy/)，
-如检测到代码中存在涉及用户隐私信息接口则需填写用户隐私保护指引信息，如已填写则无需重复填写。

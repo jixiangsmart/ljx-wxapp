@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Vant Weapp",
+  "navigationBarTitleText": "Weapp Material",
   "usingComponents": {
     "demo-home": "../../components/demo-home/index"
   }

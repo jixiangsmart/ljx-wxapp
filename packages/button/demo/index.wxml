@@ -37,7 +37,7 @@
 <demo-block title="图标按钮" padding>
   <van-button type="primary" icon="star-o" class="demo-margin-right" />
   <van-button type="primary" icon="star-o" class="demo-margin-right">按钮</van-button>
-  <van-button plain type="primary" icon="https://img.yzcdn.cn/vant/logo.png">按钮</van-button>
+  <van-button plain type="primary" icon="https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg">按钮</van-button>
 </demo-block>
 
 <demo-block title="按钮尺寸" padding>
