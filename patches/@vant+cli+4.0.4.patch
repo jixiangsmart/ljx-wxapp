@@ -1,0 +1,43 @@
+diff --git a/node_modules/@vant/cli/site/desktop/components/Simulator.vue b/node_modules/@vant/cli/site/desktop/components/Simulator.vue
+index 5016f4b..320d2ed 100644
+--- a/node_modules/@vant/cli/site/desktop/components/Simulator.vue
++++ b/node_modules/@vant/cli/site/desktop/components/Simulator.vue
+@@ -1,6 +1,9 @@
+ <template>
+   <div :class="['van-doc-simulator', { 'van-doc-simulator-fixed': isFixed }]">
+-    <iframe ref="iframe" :src="src" :style="simulatorStyle" frameborder="0" />
++    <div class="webuy-style">
++      <h2>扫描下方体验版小程序二维码查看示例</h2>
++      <img :src="src" :style="simulatorStyle" />
++    </div>
+   </div>
+ </template>
+ 
+@@ -58,6 +61,7 @@ export default {
+   background: #fafafa;
+   border-radius: @van-doc-border-radius;
+   box-shadow: 0 8px 12px #ebedf0;
++  justify-content: center;
+ 
+   @media (max-width: 1100px) {
+     right: auto;
+@@ -78,5 +82,19 @@ export default {
+     display: block;
+     width: 100%;
+   }
++
++  .webuy-style {
++    h2 {
++      margin: 24px auto 12px;
++      text-align: center;
++    }
++
++    img {
++      margin: auto;
++      display: block;
++      height: auto !important;
++      width: -webkit-fill-available;
++    }
++  }
+ }
+ </style>
