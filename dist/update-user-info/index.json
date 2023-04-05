@@ -1,7 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "van-icon": "../icon/index",
-    "van-image": "../image/index"
+    "van-image": "@vant/weapp/image/index"
   }
 }

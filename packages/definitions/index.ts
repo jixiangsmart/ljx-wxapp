@@ -35,13 +35,13 @@ export type VantComponentOptions<
   destroyed?: () => void;
 } & ThisType<
   VantComponentInstance &
-    WechatMiniprogram.Component.Instance<
-      Data & {
-        name: string;
-        value: any;
-      } & Record<string, any>,
-      Props,
-      Methods
-    > &
-    Record<string, any>
+  WechatMiniprogram.Component.Instance<
+    Data & {
+      name: string;
+      value: any;
+    } & Record<string, any>,
+    Props,
+    Methods
+  > &
+  Record<string, any>
 >;

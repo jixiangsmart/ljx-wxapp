@@ -2,11 +2,11 @@
   <view
     class="demo-home__title"
   >
-    <image mode="aspectFit" class="demo-home__image" src="https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg" />
+    <image mode="aspectFit" class="demo-home__image" src="https://cdn.webuy.ai/static/lib/resource/2023/03/28/1679995108357_7663.png" />
     <view class="demo-home__text">Weapp-Material</view>
   </view>
   <view class="demo-home__desc">
-    鲸灵 小程序 UI 物料库
+    鲸灵小程序物料库
   </view>
   <view
     wx:for="{{ list }}"

@@ -77,7 +77,7 @@
 ```html
 <van-button icon="star-o" type="primary" />
 <van-button icon="star-o" type="primary">按钮</van-button>
-<van-button icon="https://cdn.webuy.ai/static/lib/resource/2023/03/23/1679582326657_6072.jpeg" type="info">
+<van-button icon="https://cdn.webuy.ai/static/lib/resource/2023/03/28/1679995108357_7663.png" type="info">
   按钮
 </van-button>
 ```
