@@ -1,6 +1,6 @@
 {
   "name": "@lijixiang/ljxljx-wxapp",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "license": "MIT",
   "miniprogram": "lib",
   "description": "微信小程序的业务组件库",
