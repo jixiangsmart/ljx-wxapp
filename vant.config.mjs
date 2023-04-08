@@ -11,8 +11,7 @@ export default {
     description: '鲸灵小程序物料库',
     logo: 'https://cdn.webuy.ai/static/lib/resource/2023/03/28/1679995108357_7663.png',
     simulator: {
-      // 小程序体验码下载图片地址
-      url: 'https://cdn.webuy.ai/static/lib/resource/2023/03/29/1680102125429_8032.jpeg',
+      url: 'https://cdn.webuy.ai/static/lib/resource/2023/04/08/1680958328819_1915.png',
     },
     links: [
       {
