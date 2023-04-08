@@ -34,12 +34,13 @@
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| avatar-url | 默认头像 | _string_ | `avatarUrl` |
+| nick-name | 默认昵称 | _string_ | `海鸥` |
+| avatar-url | 默认头像 | _string_ | `Y` |
 | button-bgc | 按钮类型颜色 | _string_ | `#D90000` |
 
 ### Events
 
 | 参数 | 说明 | 回调参数 |
 | --- | --- | --- |
-| bind:submit | 保存按钮 | `{e}` |
+| bind:submit | 保存 | `{e}` |
 | bind:uploadavatar | 选择图片成功 | `{e}` |
