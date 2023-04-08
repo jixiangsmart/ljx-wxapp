@@ -1,3 +1,9 @@
-<demo-block title="按钮类型">
-  <webuy-update-user-info button-bgc="#263"></webuy-update-user-info>
+<demo-block>
+  <webuy-update-user-info 
+    button-bgc="#D90000"
+    avatar-url="{{ avatarUrl }}"
+    nick-name="{{ nickName }}"
+    bind:uploadavatar="uploadAvatar"
+    bind:submit="formSubmit"
+  />
 </demo-block>

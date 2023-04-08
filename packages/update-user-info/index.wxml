@@ -27,6 +27,7 @@
         <view wx:else class="shop-set_form-input">
           请上传您的头像
         </view>
+        <van-icon name="arrow" class="shop-set_form-icon" />
       </button>
     </view>
     <view class="shop-set_save">

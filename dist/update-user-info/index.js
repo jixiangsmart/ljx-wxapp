@@ -1,9 +1,14 @@
 import { VantComponent } from '../common/component';
 VantComponent({
-    data: {
-        avatarUrl: '',
-    },
     props: {
+        avatarUrl: {
+            type: String,
+            default: ''
+        },
+        nickName: {
+            type: String,
+            default: ''
+        },
         buttonBgc: {
             type: String,
             value: '#D90000'
@@ -11,11 +16,14 @@ VantComponent({
     },
     methods: {
         onChooseAvatar(e) {
-            console.log('eeeee', e);
             const { avatarUrl } = e.detail;
             this.setData({
                 avatarUrl,
             });
+            this.triggerEvent('uploadavatar', avatarUrl);
         },
+        formSubmit(e) {
+            this.triggerEvent('submit', e);
+        }
     },
 });

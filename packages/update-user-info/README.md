@@ -2,7 +2,7 @@
 
 ### 介绍
 
-该组件用户修改用户头像昵称
+用户修改用户头像昵称
 
 ### 引入
 
@@ -10,16 +10,22 @@
 
 ```json
 "usingComponents": {
-  "webuy-button": "@webuy/weapp/webuy-update-user-info/index"
+  "webuy-update-user-info": "@webuy/weapp/update-user-info/index"
 }
 ```
 
 ## 代码演示
 
-### 按钮形状
+### 示例
 
 ```html
-<webuy-update-user-info button-bgc="#263"></webuy-update-user-info>
+  <webuy-update-user-info 
+    button-bgc="#D90000"
+    avatar-url="{{ avatarUrl }}"
+    nick-name="{{ nickName }}"
+    bind:uploadavatar="uploadAvatar"
+    bind:submit="formSubmit"
+  />
 ```
 
 ## API
@@ -28,4 +34,12 @@
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
+| avatar-url | 默认头像 | _string_ | `avatarUrl` |
 | button-bgc | 按钮类型颜色 | _string_ | `#D90000` |
+
+### Events
+
+| 参数 | 说明 | 回调参数 |
+| --- | --- | --- |
+| bind:submit | 保存按钮 | `{e}` |
+| bind:uploadavatar | 选择图片成功 | `{e}` |

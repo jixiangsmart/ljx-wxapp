@@ -94,7 +94,7 @@ yarn add @webuy/weapp --production
 引入组件后，可以在 wxml 中直接使用组件
 
 ```xml
-<webuy-update-user-info type="primary">按钮</webuy-update-user-info>
+<webuy-update-user-info button-bgc="blue"></webuy-update-user-info>
 ```
 
 ## 其他
