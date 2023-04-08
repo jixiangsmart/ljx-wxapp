@@ -30,7 +30,7 @@
       </button>
     </view>
     <view class="shop-set_save">
-      <button class="shop-set_save-btn" formType="submit">保存</button>
+      <button class="shop-set_save-btn" style="background: {{ buttonBgc }}" formType="submit">保存</button>
     </view>
   </form>
 </view>
