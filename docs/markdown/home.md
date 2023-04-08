@@ -8,16 +8,14 @@
 
 ### 介绍
 
-Weapp Material 是一个**鲸灵小程序物料库**，于 2023 年开始使用。
+Weapp Material 是一个**鲸灵小程序物料库**。
 
 
 ### 预览
 
-扫描下方小程序二维码，体验组件库示例：
+扫描右侧小程序二维码，体验组件库示例：
 
-<img src="https://img.yzcdn.cn/vant-weapp/qrcode-201808101114.jpg" style="width: 200px; height: 200px; margin-top: 15px; box-shadow: none" >
-
-> Tips: 为了便于预览组件效果，本文档的右侧内嵌了 H5 版的 Material 页面作为参考。在实际使用中，个别组件的表现可能与小程序上的表现有差异，请以实际效果为准。
+> Tips: 为了便于预览组件效果，本文档的右侧使用了小程序体验版的 Material 页面作为参考。
 
 ### 快速上手
 

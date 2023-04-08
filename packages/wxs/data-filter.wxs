@@ -1,0 +1,64 @@
+/**
+ * 时间戳显示时间
+ *  * 时间戳转化为年 月 日 时 分 秒
+ * number: 传入时间戳
+ * format：返回格式，支持自定义，但参数必须与formateArr里保持一致
+ */
+
+// --------- 时间戳转化 --------- //
+// 数据转化
+function formatNumber(n) {
+  n = n + '';
+  return n[1] ? n :  '0' + n;
+}
+
+function formatTime(num, format) {
+  if( !num ) {
+    return '';
+  }
+  var patternForTime = getRegExp('-', 'g');
+  if (typeof num === 'string') {
+    num = num.replace(patternForTime, '/');
+  }
+  var formateArr = ['Y', 'M', 'D', 'h', 'm', 's'];
+  var returnArr = [];
+  var date = getDate(num);
+  returnArr.push(date.getFullYear());
+  returnArr.push(formatNumber(date.getMonth() + 1));
+  returnArr.push(formatNumber(date.getDate()));
+  returnArr.push(formatNumber(date.getHours()));
+  returnArr.push(formatNumber(date.getMinutes()));
+  returnArr.push(formatNumber(date.getSeconds()));
+  for (var i=0; i<returnArr.length; i++) {
+    format = format.replace(formateArr[i], returnArr[i]);
+  }
+  return format;
+}
+
+function formatTimeToDayHourMins(cultdown) {
+  if (cultdown && cultdown.length === 3 && cultdown[0]>=24) {
+    return Math.floor(cultdown[0]/24) + '天' + cultdown[0]%24 + '小时' + cultdown[1] + '分';
+  }
+}
+
+function countdown(time) {
+  if (!Number(time)) {
+    time = 0;
+  }
+  var days = Math.floor(time / (1000 * 60 * 60 * 24));
+  var hours = Math.floor(time / (1000 * 60 * 60) % 24);
+  var minutes = Math.floor(time / (1000 * 60) % 60);
+  var seconds = Math.floor(time / 1000 % 60);
+  var milliseconds = Math.floor(time % 1000);
+
+  return { days, hours, minutes, seconds, milliseconds };
+}
+
+// --------- /时间戳转化 --------- //
+
+module.exports = {
+  formatNumber: formatNumber,
+  formatTime: formatTime,
+  formatTimeToDayHourMins: formatTimeToDayHourMins,
+  countdown: countdown,
+};

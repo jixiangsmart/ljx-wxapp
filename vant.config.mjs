@@ -36,14 +36,6 @@ export default {
             path: 'changelog',
             title: '更新日志',
           },
-          {
-            path: 'custom-style',
-            title: '样式覆盖',
-          },
-          {
-            path: 'theme',
-            title: '定制主题',
-          },
         ],
       },
       {
@@ -54,15 +46,6 @@ export default {
             title: '更新用户头像昵称',
           },
         ]
-      },
-      {
-        title: '基础组件',
-        items: [
-          {
-            path: 'button',
-            title: 'Button 按钮',
-          },
-        ],
       },
     ],
   },

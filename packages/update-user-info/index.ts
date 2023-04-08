@@ -1,26 +1,14 @@
 import { VantComponent } from '../common/component';
-import { button } from '../mixins/button';
-import { canIUseFormFieldButton } from '../common/version';
-
-const mixins = [button];
-if (canIUseFormFieldButton()) {
-  mixins.push('wx://form-field-button');
-}
 
 VantComponent({
-  mixins,
-
-  classes: ['hover-class', 'loading-class'],
-
   data: {
     avatarUrl: '',
   },
 
   props: {
-    text: String,
-    ljxTextShow: {
-      type: Boolean,
-      value: false,
+    buttonBgc: {
+      type: String,
+      value: '#D90000'
     },
   },
 

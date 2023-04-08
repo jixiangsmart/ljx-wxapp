@@ -12,7 +12,7 @@
   },
   "usingComponents": {
     "demo-block": "./components/demo-block/index",
-    "van-update-user-info-demo": "./dist/update-user-info/demo/index"
+    "webuy-update-user-info-demo": "./dist/update-user-info/demo/index"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,5 +1,5 @@
-import { basic } from '../mixins/basic';
-import { VantComponentOptions } from 'definitions/index';
+import { basic } from './basic';
+import { VantComponentOptions } from './definitions';
 
 function mapKeys(
   source: Record<string, any>,

@@ -12,14 +12,10 @@
 
 ```bash
 # 通过 npm 安装
-npm i @vant/weapp -S --production
+npm i @webuy/weapp -S --production
 
 # 通过 yarn 安装
-yarn add @vant/weapp --production
-
-# 安装 0.x 版本
-npm i vant-weapp -S --production
-```
+yarn add @webuy/weapp --production
 
 ### 步骤二 修改 app.json
 
@@ -54,42 +50,9 @@ npm i vant-weapp -S --production
 
 <img style="width: 500px;" src="https://img.yzcdn.cn/public_files/2019/08/15/fa0549210055976cb63798503611ce3d.png" />
 
-### 步骤五 typescript 支持
-
-如果你使用 typescript 开发小程序，还需要做如下操作，以获得顺畅的开发体验。
-
-#### 安装 miniprogram-api-typings
-
-```bash
-# 通过 npm 安装
-npm i -D miniprogram-api-typings
-
-# 通过 yarn 安装
-yarn add -D miniprogram-api-typings
-```
-
-#### 在 tsconfig.json 中增加如下配置，以防止 tsc 编译报错。
-
-请将`path/to/node_modules/@vant/weapp`修改为项目的 `node_modules` 中 @vant/weapp 所在的目录。
-
-```json
-{
-  ...
-  "compilerOptions": {
-    ...
-    "baseUrl": ".",
-    "types": ["miniprogram-api-typings"],
-    "paths": {
-      "@vant/weapp/*": ["path/to/node_modules/@vant/weapp/dist/*"]
-    },
-    "lib": ["ES6"]
-  }
-}
-```
-
 ### 示例工程
 
-我们提供了一个[示例工程](https://github.com/vant-ui/vant-demo)，示例工程会帮助你了解如下内容：
+我们提供了一个[示例工程](https://github.com/webuy-ui/webuy-demo)，示例工程会帮助你了解如下内容：
 
 - 基于 Weapp Material 搭建小程序应用
 - 样式覆盖方案
@@ -98,15 +61,15 @@ yarn add -D miniprogram-api-typings
 
 ### 引入组件
 
-以 Button 组件为例，只需要在`app.json`或`index.json`中配置 Button 对应的路径即可。
+以 更新用户头像昵称 组件为例，只需要在`app.json`或`index.json`中配置 update-user-info 对应的路径即可。
 
-所有组件文档中的引入路径均以 npm 安装为例，如果你是通过下载源代码的方式使用 @vant/weapp，请将路径修改为项目中 @vant/weapp 所在的目录。
+所有组件文档中的引入路径均以 npm 安装为例，如果你是通过下载源代码的方式使用 @webuy/weapp，请将路径修改为项目中 @webuy/weapp 所在的目录。
 
 ```json
 // 通过 npm 安装
 // app.json
 "usingComponents": {
-  "van-button": "@vant/weapp/button/index"
+  "webuy-update-user-info": "@webuy/weapp/update-user-info/index"
 }
 ```
 
@@ -114,7 +77,7 @@ yarn add -D miniprogram-api-typings
 // 通过下载源码使用 es6版本
 // app.json
 "usingComponents": {
-  "van-button": "path/to/@vant/weapp/dist/button/index"
+  "webuy-update-user-info": "path/to/@webuy/weapp/dist/update-user-info/index"
 }
 ```
 
@@ -122,7 +85,7 @@ yarn add -D miniprogram-api-typings
 // 通过下载源码使用 es5版本
 // app.json
 "usingComponents": {
-  "van-button": "path/to/@vant/weapp/lib/button/index"
+  "webuy-update-user-info": "path/to/@webuy/weapp/lib/update-user-info/index"
 }
 ```
 
@@ -131,7 +94,7 @@ yarn add -D miniprogram-api-typings
 引入组件后，可以在 wxml 中直接使用组件
 
 ```xml
-<van-button type="primary">按钮</van-button>
+<webuy-update-user-info type="primary">按钮</webuy-update-user-info>
 ```
 
 ## 其他
@@ -141,10 +104,10 @@ yarn add -D miniprogram-api-typings
 ```bash
 
 # 将项目克隆到本地 ljx
-git clone git@github.com:youzan/vant-weapp.git
+git clone git@github.com:youzan/webuy-weapp.git
 
 # 安装项目依赖
-cd vant-weapp && npm install
+cd webuy-weapp && npm install
 
 # 执行组件编译
 npm run dev

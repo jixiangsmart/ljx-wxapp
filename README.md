@@ -2,38 +2,25 @@
   <img alt="logo" src="https://cdn.webuy.ai/static/lib/resource/2023/03/28/1679995108357_7663.png" width="120" style="margin-bottom: 10px;">
 </p>
 <h3 align="center">轻量、可靠的小程序 UI 组件库</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/npm/v/@vant/weapp.svg?style=for-the-badge" alt="npm version" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&color=#4fc08d" />
-  <img src="https://img.shields.io/npm/dt/@vant/weapp.svg?style=for-the-badge&color=#4fc08d" alt="downloads" />
-  <img src="https://img.shields.io/npm/dm/@vant/weapp.svg?style=for-the-badge&color=#4fc08d" alt="downloads" />
-</p>
-
 <p align="center">
   &nbsp;
   🌈 <a href="https://youzan.github.io/vant-weapp">文档网站（GitHub）</a>
-  &nbsp;
-  🚀 <a href="https://github.com/vant-ui/vant" target="_blank">Vue 版</a>
 </p>
 
 ---
 
 ### 介绍
 
-Vant 是一个**轻量、可靠的移动端组件库**，于 2017 年开源。 
+Weapp Material 是一个**鲸灵小程序物料库**。
 
-目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant/v2)、[Vue 3 版本](https://vant-contrib.gitee.io/vant)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/3lang3/react-vant)和[支付宝小程序版本](https://github.com/ant-move/Vant-Aliapp)。
 
 ## 预览
 
-扫描下方小程序二维码，体验组件库示例：
-
-<img src="https://img.yzcdn.cn/vant-weapp/qrcode-201808101114.jpg" width="200" height="200" style="margin-top: 10px;" >
+文档网站右侧预览小程序体验二维码，体验组件库示例；
 
 ## 使用之前
 
-使用 Vant Weapp 前，请确保你已经学习过微信官方的 [小程序简易教程](https://developers.weixin.qq.com/miniprogram/dev/framework/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
+使用 Webuy Weapp 前，请确保你已经学习过微信官方的 [小程序简易教程](https://developers.weixin.qq.com/miniprogram/dev/framework/) 和 [自定义组件介绍](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
 ## 安装
 
@@ -43,22 +30,11 @@ Vant 是一个**轻量、可靠的移动端组件库**，于 2017 年开源。
 
 ```bash
 # 通过 npm 安装
-npm i @vant/weapp -S --production
+npm i @webuy/weapp -S --production
 
 # 通过 yarn 安装
-yarn add @vant/weapp --production
+yarn add @webuy/weapp --production
 
-# 安装 0.x 版本
-npm i vant-weapp -S --production
-```
-
-### 方式二. 下载代码
-
-直接通过 git 下载 Vant Weapp 源代码，并将 `dist` 目录拷贝到自己的项目中。
-
-```bash
-git clone https://github.com/youzan/vant-weapp.git
-```
 
 ## 使用组件
 
@@ -67,7 +43,7 @@ git clone https://github.com/youzan/vant-weapp.git
 ```json
 {
   "usingComponents": {
-    "van-button": "/path/to/vant-weapp/dist/button/index"
+    "webuy-update-user-info": "/path/to/webuy-weapp/dist/webuy-update-user-info/index"
   }
 }
 ```
@@ -75,7 +51,7 @@ git clone https://github.com/youzan/vant-weapp.git
 接着就可以在 wxml 中直接使用组件
 
 ```html
-<van-button type="primary">按钮</van-button>
+<webuy-update-user-info button-bgc="blue"></webuy-update-user-info>
 ```
 
 ## 在开发者工具中预览
@@ -88,35 +64,6 @@ npm install
 npm run dev
 ```
 
-打开[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)，把`vant-weapp/example`目录添加进去就可以预览示例了。
+打开[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)，把`webuy-weapp/example`目录添加进去就可以预览示例了。
 
-## 基础库版本
 
-Vant Weapp 最低支持到小程序基础库 2.6.5 版本。
-
-## 链接
-
-- [意见反馈](https://github.com/youzan/vant-weapp/issues)
-- [设计资源](https://vant-contrib.gitee.io/vant/#/zh-CN/design)
-- [更新日志](https://vant-contrib.gitee.io/vant-weapp/#/changelog)
-- [官方示例](https://github.com/vant-ui/vant-demo)
-
-## 核心团队
-
-以下是 Vant 和 Vant Weapp 的核心贡献者们：
-
-| [![chenjiahan](https://avatars.githubusercontent.com/u/7237365?s=80&v=4)](https://github.com/chenjiahan/) | [![cookfront](https://avatars.githubusercontent.com/u/4829465?s=80&v=4)](https://github.com/cookfront/) | [![w91](https://avatars.githubusercontent.com/u/2599455?s=80&v=4)](https://github.com/w91/) | [![pangxie1991](https://avatars.githubusercontent.com/u/5961240?s=80&v=4)](https://github.com/pangxie1991/) | [![rex-zsd](https://avatars.githubusercontent.com/u/8767877?s=80&v=4)](https://github.com/rex-zsd/) | [![nemo-shen](https://avatars.githubusercontent.com/u/13480805?s=80&v=4)](https://github.com/nemo-shen/) | [![Lindysen](https://avatars.githubusercontent.com/u/33708359?s=80&v=4)](https://github.com/Lindysen/) | [![nemo-shen](https://avatars.githubusercontent.com/u/16181940?s=80&v=4)](https://github.com/JakeLaoyu/) |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| [chenjiahan](https://github.com/chenjiahan/) | [cookfront](https://github.com/cookfront/) | [wangnaiyi](https://github.com/w91/) | [pangxie](https://github.com/pangxie1991/) | [rex-zsd](https://github.com/rex-zsd/) | [nemo-shen](https://github.com/nemo-shen/) | [Lindysen](https://github.com/Lindysen/) | [JakeLaoyu](https://github.com/JakeLaoyu/) |
-
-## 贡献者们
-
-感谢以下小伙伴们为 Vant Weapp 发展做出的贡献：
-
-<a href="https://github.com/youzan/vant-weapp/graphs/contributors">
-  <img src="https://opencollective.com/vant-weapp/contributors.svg?width=890&button=false" alt="contributors">
-</a>
-
-## 开源协议
-
-本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)协议，请自由地享受和参与开源。
